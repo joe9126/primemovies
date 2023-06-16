@@ -24,4 +24,8 @@ export class HomeComponent implements OnInit{
         }
       );
     }
+
+    trendingMovies(){
+      this.service.bannerApiData
+    }
 }
