@@ -1,17 +1,17 @@
-<!-- banner start -->
+  <!-- banner start -->
 
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" >
-       
+
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000"
             *ngFor="let b of bannerResult; let i = index" [ngClass]="{active:i===1}">
             <img src="https://image.tmdb.org/t/p/original/{{b.backdrop_path}}" class="d-block w-100" alt="{{b.original_title}}">
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+              <h2>{{ b.original_title }}</h2>
+              <p>{{ b.overview }}</p>
             </div>
           </div>
-           
+
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -22,6 +22,23 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
-
 <!-- banner end  -->
+
+<!-- trending all week section start -->
+<div class="contain mt-4 p-4">
+  <div class="row">
+    <h4 class="text-warning">Trending This Week</h4>
+    <div class="rowposter" >
+      <ng-container *ngFor="let t of trendingResult">
+        <img
+           src="https://image.tmdb.org/t/p/original/{{t.poster_path}}"
+          class="rowimage largeposter"
+          alt="{{t.original_title}}">
+      </ng-container>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- !-- trending all week section start -->

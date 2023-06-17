@@ -1,1 +1,16 @@
-<p>search works!</p>
+<div class="container mt-5 p-5">
+  <form [formGroup]="searchForm" (submit)="searchPhrase()">
+    <div class="row">
+      <div class="col-sm-8 mb-3">
+        <input type="text" formControlName="searchtext" class="form-control" placeholder="Search">
+      </div>
+      <div class="col-sm-4">
+        <button type="submit" class="btn btn-warning " [disabled]="searchForm.invalid">Search</button>
+        <div class="error" *ngIf="searchForm.hasError('yourErrorName')">
+          Come on, give us a movie or tv series name to work with
+         </div>
+      </div>
+    </div>
+
+  </form>
+</div>
