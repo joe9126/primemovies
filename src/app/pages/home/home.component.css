@@ -10,6 +10,7 @@
 .carousel-caption{
   background-color: rgba(7, 7, 7, 0.5);
   padding: 15px;
+  margin-top: -50px;
 }
 .carousel-caption h2{
   color: rgb(255, 196, 0);
@@ -20,14 +21,6 @@
   font-family: 'Courier New', Courier, monospace;
   font-size: 12px;
 }
-.carousel-inner .carousel-item{
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 
 .rowposter{
   display: flex;

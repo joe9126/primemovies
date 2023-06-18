@@ -1,4 +1,6 @@
 <div class="container mt-5 p-5">
+<div class="row justify-content-center">
+  <div class="col-sm-10">
   <form [formGroup]="searchForm" (submit)="searchPhrase()">
     <div class="row">
       <div class="col-sm-8 mb-3">
@@ -11,6 +13,25 @@
          </div>
       </div>
     </div>
-
   </form>
+  </div>
+</div>
+
+  <div class="row ">
+    <div class="col-sm-10" *ngFor="let sr of searchResults">
+        <div class="row mt-4">
+          <div class="col-sm-3" *ngIf="sr.poster_path" >
+            <img src="https://image.tmdb.org/t/p/original/{{ sr.poster_path }}" alt="{{ sr.title }}"
+              [routerLink]="['/movie',sr.id]"
+            >
+          </div>
+          <div class="col-sm-9" *ngIf="sr.title">
+            <h5 class="text-light movietitle" [routerLink]="['/movie',sr.id]">{{ sr.title }}</h5>
+            <h6 class="mb-3">Rating  {{ sr.vote_average }}| Released {{ sr.release_date | date:'dd MMM yyyy'}} | {{ sr.media_type | titlecase}}</h6>
+            <p class="mt-4 mb-4">{{ sr.overview | slice:0:100}} ...</p>
+
+          </div>
+        </div><hr class="hr">
+    </div>
+  </div>
 </div>

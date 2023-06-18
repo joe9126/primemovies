@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit{
 
     ngOnInit(){
       this.bannerData();
-      this.trendingallweekData();
+      this.trendingMovies();
     }
 
     //fetch banner data
@@ -28,14 +28,15 @@ export class HomeComponent implements OnInit{
       );
     }
 
-    //trending all week
-
-    trendingallweekData(){
-      this.service.trendingAllWeek().subscribe(
+    //trending movies
+    trendingMovies(){
+      this.service.trendingMovies().subscribe(
         (result:any)=>{
-          console.log(result,'trendingallweek#');
+          console.log(result,'trendingmovies#');
           this.trendingResult = result.results;
         }
       )
     }
+
+
 }

@@ -8,7 +8,7 @@ import { MovieApiService } from 'src/app/service/movie-api.service';
 })
 export class SearchComponent implements OnInit{
   searchForm : FormGroup;
-  //searchData
+  searchResults : any;
   constructor(private fb: FormBuilder, private service: MovieApiService){
     this.searchForm = this.fb.group({});
   }
@@ -21,7 +21,7 @@ export class SearchComponent implements OnInit{
 
   searchPhrase(){
     const formData = this.searchForm.getRawValue();
-    console.log(formData.searchtext,'search text#');
+    //console.log(formData.searchtext,'search text#');
 
     /*if(this.searchForm.invalid) {
       this.searchForm.setErrors({ ...this.searchForm.errors, 'yourErrorName': true });
@@ -31,6 +31,7 @@ export class SearchComponent implements OnInit{
     this.service.searchMovie(formData.searchtext).subscribe(
       (result)=>{
         console.log(result.results,'searchresults#');
+        this.searchResults = result.results;
       }
     );
   }
