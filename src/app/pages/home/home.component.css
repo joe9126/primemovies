@@ -27,9 +27,6 @@
   overflow-y: hidden;
   overflow-x: scroll;
 }
-
-
-
 .rowimage{
   max-height: 100px;
   object-fit: contain;
@@ -45,9 +42,11 @@
   max-height: 350px !important;
 }
 .rowposter::-webkit-scrollbar{
-  overflow: auto;
+  overflow-x: scroll !important;
   display: none !important;
   -ms-overflow-style: none !important;  /* IE and Edge */
   scrollbar-width: none !important;  /* Firefox */
   width: 0 !important;
+  width: 0;
+  height: 0;
 }
