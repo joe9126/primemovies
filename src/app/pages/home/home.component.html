@@ -1,19 +1,5 @@
   <!-- banner start -->
 
-<<<<<<< HEAD
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" >
-       
-            <div class="carousel-inner" >
-              <div class="carousel-item active" data-bs-interval="10000"
-                *ngFor="let b of bannerResult; let i = index" [ngClass]="{active:i===1}">
-                <img src="https://image.tmdb.org/t/p/original/{{b.backdrop_path}}" class="d-block" alt="{{b.original_title}}">
-                <div class="carousel-caption d-none d-md-block text-light p-3">
-                  <h5>{{b.original_title | titlecase}} |  Released {{b.release_date | date :'dd MMM yyyy'}} | {{b.media_type | titlecase}}  </h5>
-                  <p>{{b.overview}}</p>
-                </div>
-              </div>
-               
-=======
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" >
 
         <div class="carousel-inner">
@@ -23,7 +9,6 @@
             <div class="carousel-caption d-none d-md-block">
               <h2>{{ b.original_title }}</h2>
               <p>{{ b.overview }}</p>
->>>>>>> 73758dee326b3f1cfd5b2417a1f7ec72cd3f4627
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -34,17 +19,6 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-<<<<<<< HEAD
-<!-- banner end  -->
-<!-- trending movies start-->
-<div class="contain pt-4 p-4">
-    <div class="row"> 
-            <h5 class="text-warning fw-bold ">Trending Movies</h5> 
-    </div>
-</div>
-
-<!-- trending movies end-->
-=======
 
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -77,4 +51,3 @@
 </div>
 
 <!-- !-- trending all week section start -->
->>>>>>> 73758dee326b3f1cfd5b2417a1f7ec72cd3f4627

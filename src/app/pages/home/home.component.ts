@@ -28,11 +28,6 @@ export class HomeComponent implements OnInit{
       );
     }
 
-<<<<<<< HEAD
-    trendingMovies(){
-      this.service.bannerApiData
-    }
-=======
     //trending movies
     trendingMovies(){
       this.service.trendingMovies().subscribe(
@@ -44,5 +39,4 @@ export class HomeComponent implements OnInit{
     }
 
 
->>>>>>> 73758dee326b3f1cfd5b2417a1f7ec72cd3f4627
 }
