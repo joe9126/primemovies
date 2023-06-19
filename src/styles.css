@@ -11,14 +11,15 @@ html, body {
     color: rgb(255, 196, 0);
     font-weight: bold;
     padding-left: 5px;
-    
+
 }
 
-.navbar-nav .nav-item .nav-link, .carousel-control-next{ 
+.navbar-nav .nav-item .nav-link, .carousel-control-next{
     color: rgb(255, 196, 0);
-   
+
 }
 
+<<<<<<< HEAD
 .carousel .carousel-inner .carousel-item{
     background-position: center !Important;
     background-size: contain !Important;
@@ -40,3 +41,6 @@ img {
   .row{
     background-color: inherit;
   }
+=======
+
+>>>>>>> 73758dee326b3f1cfd5b2417a1f7ec72cd3f4627

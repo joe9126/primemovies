@@ -1,0 +1,17 @@
+button:hover{
+  background-color: black;
+  color: rgb(255, 196, 0);
+  border: 1px solid  rgb(255, 196, 0);
+}
+img{
+  max-height:150px;
+
+  max-width: 200px;
+  padding: 5px;
+}
+img:hover{
+  cursor: pointer;
+}
+.movietitle:hover{
+  cursor: pointer;
+}

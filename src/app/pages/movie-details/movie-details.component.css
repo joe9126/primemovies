@@ -1,0 +1,36 @@
+img{
+  width: 100%;
+  height: auto;
+}
+h1{
+  color: #ffffff;
+  font-weight: bold;
+}
+p{
+  color: #ffffff;
+}
+.trailer-link{
+  color: black;
+}
+.trailer-link:hover{
+  background-color: black;
+  border: 2px solid rgb(255, 196, 0);
+  text-decoration: none;
+  color: rgb(255, 196, 0);
+}
+.castimage{
+  width:auto !important;
+  height: 80px !important;
+  object-fit: contain;
+}
+.text-grey{
+  color: grey;
+}
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover{
+  text-decoration: none;
+  border: none;
+}
